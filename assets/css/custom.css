@@ -17,12 +17,6 @@
     color: #fff;
 }
 
-#banner {
-    min-height: 800px;
-    height: 100vh;
-    background: #131429;
-}
-
 #banner h1 {
     font-size: 80px;
 }
@@ -32,8 +26,49 @@
     width: 100%;
 }
 
-.banner-content h1 {
+
+.section {
+    background: #131429;
+    min-height: 100vh;
+    padding: 3em 0;
+}
+
+.text-gradient {
     background: linear-gradient(to right,#f04977,#fc644d 50%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+span.category {
+    background-image: linear-gradient(to right,#f04977,#fc644d);
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.project-item .project-item-img-wrapper {
+    min-width: 260px;
+}
+
+.project-item-img-wrapper img {
+    text-align: right
+}
+
+.section:not(.section-1) {
+    display: none;
+}
+
+.control-panel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.flex {
+    display: flex;
 }
