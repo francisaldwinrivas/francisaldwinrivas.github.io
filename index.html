@@ -9,10 +9,13 @@
 </head>
 <body>
     <div class="control-panel flex flex-column">
-        <button class="active" data-section="1">1</button>
-        <button data-section="2">2</button>
-        <button data-section="3">3</button>
+        <button class="active" data-section="1" data-toggle="tooltip" data-placement="left" title="Home">1</button>
+        <button data-section="2" data-toggle="tooltip" data-placement="left" title="About me">2</button>
+        <button data-section="3" data-toggle="tooltip" data-placement="left" title="Recent Projects">3</button>
+        <button data-section="4" data-toggle="tooltip" data-placement="left" title="Skill Set">4</button>
     </div>
+
+    <!-- BANNER -->
     <section id="banner" class="flex align-items-center section section-1">
         <div class="container-lg">
             <div class="row mb-5">
@@ -28,6 +31,9 @@
             </div>
         </div>
     </section>
+    <!-- BANNER -->
+
+    <!-- WHO AM I -->
     <section class="flex align-items-center section section-2">
         <div class="container-lg">
             <div class="row">
@@ -35,13 +41,15 @@
                     <h2>So... <span class="text-gradient">Who am I?</span></h2>
                 </div>
                 <div class="col-12 col-lg-6 text-center text-lg-left text-white">
-                    <h3>Sorry to disappoint you but I'm just your average web developer. Yep, you read it right. <span class="text-gradient">Average</span>.</h3>
-                    <h3>You're looking for a <span class="text-gradient">Rockstar Developer</span>? How about a <span class="text-gradient">Ninja Developer</span>?</h3>
-                    <h3>Sorry to waste your time but I'm neither of those. I'm just your plain, old Web developer that converts coffee into codes and someone who <span class="text-gradient">gets the job done.</span></h3>
+                    <h3>Are you looking for a Rockstar developer? How about a Ninja developer?</h3>
+                    <h3>If you're looking for those then I'm sorry to waste your time. I'm <span class="text-gradient">neither</span> of the two. I'm just your plain, young, Web Developer that converts coffee into code <span class="text-gradient">except that I get the job done</span>.</h3>
                 </div>
             </div>
         </div>
     </section>
+    <!-- WHO AM I -->
+
+    <!-- RECENT PROJECTS -->
     <section class="flex align-items-center section section-3">
         <div class="container-lg">
             <div class="row mb-5">
@@ -59,8 +67,8 @@
                         </div>
                         <div class="project-item-content text-white ml-5">
                             <h3>C9 Digital</h3>
-                            <p class="m-0">C9 Digital was founded on the idea that helping you access quality talent at a lower cost is a good thing. Your business thrives when smart and competent people are at the helm. Whether you’re looking for new talent to drive growth or save on costs, we believe that when your business prospers, so does everyone else. After all, we’re all interconnected in this new global economy. </p>
-                            <p><span class="category mr-1">Wordpress</span><span class="category">Fullstack</span></p>
+                            <p class="mb-2">C9 Digital was founded on the idea that helping you access quality talent at a lower cost is a good thing. Your business thrives when smart and competent people are at the helm. If you’re looking for new talent to drive growth or save on costs, C9 Digital believe that when your business prospers, so does everyone else.</p>
+                            <p><span class="category mr-1">Wordpress</span><span class="category mr-1">Fullstack</span><span class="category">AWS</span></p>
                         </div>
                     </div>
                 </div>
@@ -75,8 +83,8 @@
                         </div>
                         <div class="project-item-content text-white ml-5">
                             <h3>C9 Freelancer</h3>
-                            <p class="m-0">C9 Freelancer was founded on the idea that there is a better way to hire freelancing teams. No HR. No Interviewing. No complicated financial contracts. No risk of getting ghosted or working on opposite time zones and experiencing unneeded stress.</p>
-                            <p><span class="category mr-1">Wordpress</span><span class="category">Fullstack</span></p>
+                            <p class="mb-2">C9 Freelancer was founded on the idea that there is a better way to hire freelancing teams. No HR. No Interviewing. No complicated financial contracts. No risk of getting ghosted or working on opposite time zones and experiencing unneeded stress.</p>
+                            <p><span class="category mr-1">Wordpress</span><span class="category mr-1">Fullstack</span><span class="category">AWS</span></p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +99,7 @@
                         </div>
                         <div class="project-item-content text-white ml-5">
                             <h3>Webpon</h3>
-                            <p class="m-0">Webpon is a place where gacha gamers of all levels and of all ages gather, consuming their luck for the entire year to get the coolest and rarest items from each shop!</p>
+                            <p class="mb-2">Webpon is a place where gacha gamers of all levels and of all ages gather, consuming their luck for the entire year to get the coolest and rarest items from each shop!</p>
                             <p><span class="category mr-1">laravel</span><span class="category">Fullstack</span></p>
                         </div>
                     </div>
@@ -107,7 +115,7 @@
                         </div>
                         <div class="project-item-content text-white ml-5">
                             <h3>gishiki.co.jp</h3>
-                            <p class="m-0">Webpon is a place where gacha gamers of all levels and of all ages gather, consuming their luck for the entire year to get the coolest and rarest items from each shop!</p>
+                            <p class="mb-2">gishiki.co.jp offers funeral support services to japanese families.</p>
                             <p><span class="category mr-1">laravel</span><span class="category">Fullstack</span></p>
                         </div>
                     </div>
@@ -123,7 +131,7 @@
                         </div>
                         <div class="project-item-content text-white ml-5">
                             <h3>Runway Football</h3>
-                            <p class="m-0">Webpon is a place where gacha gamers of all levels and of all ages gather, consuming their luck for the entire year to get the coolest and rarest items from each shop!</p>
+                            <p class="mb-2">Runway provides services that provides users opportunities to enjoy soccer, opportunity to learn soccer and most of all, opportunity to make your soccer dream come true!</p>
                             <p><span class="category mr-1">laravel</span><span class="category">Fullstack</span></p>
                         </div>
                     </div>
@@ -131,10 +139,37 @@
             </div>
         </div>
     </section>
+    <!-- RECENT PROJECTS -->
+
+    <!-- SKILL SET -->
+    <section class="flex align-items-center section section-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-white d-flex align-items-center justify-content-center justify-content-lg-end mb-4 mb-lg-0">
+                    <h2>My Skill Set</span></h2>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-left text-white">
+                    <p>Proficient <small>(6 years experience)</small></p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+                        <div class="pill text-gradient">php & mysql</div><div class="pill text-gradient">laravel</div><div class="pill text-gradient">wordpress</div><div class="pill text-gradient">git</div><div class="pill text-gradient">boostrap</div>
+                    </div>
+                    <p>Novice</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+                        <div class="pill text-gradient">Vue</div><div class="pill text-gradient">React</div><div class="pill text-gradient">AWS</div><div class="pill text-gradient">Redux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLSET -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <script>
         jQuery(document).ready(function($) {
+            $('[data-toggle="tooltip"]').tooltip();
+
             $('.control-panel button').on('click', function() {
                 $('.control-panel button').removeClass('active');
                 $(this).addClass('active');
