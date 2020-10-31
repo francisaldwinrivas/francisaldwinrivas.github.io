@@ -18,7 +18,7 @@
 }
 
 #banner h1 {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 #banner img {
@@ -40,7 +40,7 @@
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 span.category {
@@ -64,11 +64,89 @@ span.category {
 }
 
 .control-panel {
+    display: none;
     position: fixed;
-    top: 50%;
+    top: 46%;
     right: 0;
+    background: rgba(255, 255, 255,0.1);
+    padding: 1em 0.5em;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.control-panel button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    outline: 0 !important;
+    border: 1px solid transparent;
+    color: transparent;
+    background: linear-gradient(to right,#f04977,#fc644d 50%) !important;
+    z-index: 1;
+}
+
+.control-panel button:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.control-panel button.active {
+    background: #2b2c3f !important;
+    border-color: #f04977;
 }
 
 .flex {
     display: flex;
+}
+
+@media screen and (max-width: 1250) {
+
+}
+
+@media screen and (max-width: 991px) {
+    #banner img {
+        max-width: 350px;
+    }
+
+    #banner h1, h2 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .project-item-img-wrapper {
+        margin-bottom: 1em;
+    }
+
+    .project-item-content {
+        margin-left: 0 !important;
+    }
+
+    .project-item-img-wrapper img {
+        max-width: 220px;
+    }
+
+    .project-item-img-wrapper,
+    .project-item-content h3,
+    .project-item-content p {
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #banner img {
+        max-width: 220px;
+    }
+
+    #banner h1, h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
 }
