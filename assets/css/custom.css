@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.container-md {
+    max-width: 1200px;
+}
+
+.container-lg {
+    max-width: 1400px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+#banner {
+    min-height: 800px;
+    height: 100vh;
+    background: #131429;
+}
+
+#banner h1 {
+    font-size: 80px;
+}
+
+#banner img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.banner-content h1 {
+    background: linear-gradient(to right,#f04977,#fc644d 50%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
