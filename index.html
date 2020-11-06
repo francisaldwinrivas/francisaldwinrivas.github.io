@@ -168,7 +168,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <script>
         jQuery(document).ready(function($) {
-            $('[data-toggle="tooltip"]').tooltip();
+            if(window.matchMedia("(min-width: 480px)").matches) {
+                $('[data-toggle="tooltip"]').tooltip({placement: 'left',trigger: 'manual'}).tooltip('show');
+            } else {
+                $('[data-toggle="tooltip"]').tooltip();
+            }
 
             $('.control-panel button').on('click', function() {
                 $('.control-panel button').removeClass('active');
@@ -176,7 +180,7 @@
                 let data = $(this).data('section')
                 $('.section').fadeOut('fast', function() {
                     $('.section-' + parseInt(data)).show().attr('style', 'display: flex !important;');
-                })
+                });
             });
         });
     </script>

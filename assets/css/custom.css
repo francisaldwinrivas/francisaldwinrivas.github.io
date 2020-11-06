@@ -88,7 +88,7 @@ span.category {
 }
 
 .control-panel button:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
 }
 
 .control-panel button.active {
